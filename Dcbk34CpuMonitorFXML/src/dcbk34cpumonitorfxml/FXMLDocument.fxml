@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="565.0" prefWidth="420.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dcbk34cpumonitorfxml.FXMLDocumentController">
+    <children>
+        <Button fx:id="start" layoutX="94.0" layoutY="502.0" onAction="#start" prefHeight="44.0" prefWidth="73.0" text="Start" textFill="#00ff11" />
+      <Button fx:id="record" layoutX="284.0" layoutY="502.0" mnemonicParsing="false" onAction="#record" prefHeight="44.0" prefWidth="65.0" text="Record" textFill="#1500ff" />
+      <VBox layoutX="126.0" layoutY="345.0" prefHeight="121.0" prefWidth="331.0" AnchorPane.rightAnchor="30.0">
+         <children>
+            <Label fx:id="record1" prefHeight="44.0" prefWidth="330.0" text="--.--%">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="record2" prefHeight="37.0" prefWidth="348.0" text="--.--%">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="record3" prefHeight="41.0" prefWidth="333.0" text="--.--%">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Label alignment="CENTER" layoutX="92.0" layoutY="14.0" prefHeight="78.0" prefWidth="271.0" text="CPU Monitor" textFill="#ff6200">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <Label fx:id="CPUDigitalDisplay" alignment="CENTER" layoutX="119.0" layoutY="298.0" prefHeight="53.0" prefWidth="152.0" text="--.--%" AnchorPane.rightAnchor="149.0">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="gauge" fitHeight="200.0" fitWidth="200.0" layoutX="130.0" layoutY="83.0">
+         <image>
+            <Image url="@gauge.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="dial" fitHeight="200.0" fitWidth="200.0" layoutX="130.0" layoutY="83.0" rotate="-135.0">
+         <image>
+            <Image url="@hand.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>
